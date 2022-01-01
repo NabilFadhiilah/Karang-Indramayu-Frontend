@@ -1,0 +1,191 @@
+$primary: #1c3095;
+$subtleblue: #170b40;
+$semiblue: #2a66e2;
+$background: #f3f4f8;
+$font: "Poppins", sans-serif;
+$link: #599ec6;
+
+body {
+  font-family: $font;
+  background-color: $background;
+}
+
+.nav-custom {
+  max-height: 100px !important;
+
+  .navbar-brand {
+    img {
+      max-height: 40px;
+    }
+  }
+  .btn-login {
+    border-radius: 200px !important;
+    padding: 5px;
+    background-color: $primary;
+    &:hover {
+      background-color: $semiblue;
+    }
+    @media screen {
+      padding: 5px 10px;
+    }
+  }
+  .nav-item {
+    margin-right: 15px !important;
+  }
+}
+
+header {
+  padding: 180px 0 165px;
+  background-image: url("../Images/Banner-Hero.png");
+  background-size: cover;
+
+  h1,
+  p {
+    color: #fff;
+  }
+
+  h1 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .btn-get-started {
+    background-color: $primary;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: $semiblue;
+    }
+  }
+}
+
+.section-informasi {
+  padding-top: 55px;
+  padding-bottom: 25px;
+
+  h1 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  img {
+    max-height: 300px;
+  }
+}
+
+.section-berita-kegiatan {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f6f9ff;
+  h1 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  img {
+    max-height: 300px !important;
+  }
+
+  a {
+    color: $link;
+  }
+
+  i {
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  .btn-berita {
+    background-color: $primary;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: $semiblue;
+    }
+  }
+
+  @media screen {
+    i {
+      font-size: 4rem;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .secondary-image {
+      img {
+        height: 100;
+        width: 100;
+      }
+    }
+  }
+}
+
+.section-wisata {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $subtleblue;
+
+  h1 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+  }
+
+  h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+  }
+
+  h3 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+  }
+}
