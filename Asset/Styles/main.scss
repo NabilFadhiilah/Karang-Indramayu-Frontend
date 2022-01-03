@@ -2,17 +2,42 @@ $primary: #1c3095;
 $subtleblue: #170b40;
 $semiblue: #2a66e2;
 $background: #f3f4f8;
-$font: "Poppins", sans-serif;
 $link: #599ec6;
+$text: #404040;
+
+$font: "Poppins", sans-serif;
+
+$semibold: 600;
+$reguler: 400;
 
 body {
   font-family: $font;
   background-color: $background;
+  h1 {
+    font-family: $font;
+    font-weight: $semibold;
+    font-size: 30px;
+  }
+  h2 {
+    font-family: $font;
+    font-weight: $semibold;
+    font-size: 24px;
+  }
+  h3 {
+    font-family: $font;
+    font-weight: $semibold;
+    font-size: 18px;
+  }
+  p {
+    font-family: $font;
+    font-size: 16px;
+    font-weight: $reguler;
+    color: $text;
+  }
 }
 
 .nav-custom {
   max-height: 100px !important;
-
   .navbar-brand {
     img {
       max-height: 40px;
@@ -38,27 +63,13 @@ header {
   padding: 180px 0 165px;
   background-image: url("../Images/Banner-Hero.png");
   background-size: cover;
-
   h1,
   p {
     color: #fff;
   }
-
-  h1 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 30px;
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: 400;
-  }
-
   .btn-get-started {
     background-color: $primary;
     color: #fff;
-
     &:hover {
       color: #fff;
       background-color: $semiblue;
@@ -69,24 +80,6 @@ header {
 .section-informasi {
   padding-top: 55px;
   padding-bottom: 25px;
-
-  h1 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 30px;
-  }
-
-  h2 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: 400;
-  }
-
   img {
     max-height: 300px;
   }
@@ -96,63 +89,34 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #f6f9ff;
-  h1 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 30px;
+  .secondary-images {
+    max-width: 100px;
+    background-size: cover;
   }
-
-  h2 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 24px;
-  }
-
-  h3 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: 400;
-  }
-
   img {
     max-height: 300px !important;
+    background-size: cover;
   }
-
   a {
     color: $link;
   }
-
   i {
     font-size: 6rem;
     text-align: center;
   }
-
   .btn-berita {
     background-color: $primary;
     color: #fff;
-
     &:hover {
       color: #fff;
       background-color: $semiblue;
     }
   }
-
   @media screen {
     i {
       font-size: 4rem;
       padding-right: 20px;
       padding-left: 20px;
-    }
-    .secondary-image {
-      img {
-        height: 100;
-        width: 100;
-      }
     }
   }
 }
@@ -161,31 +125,98 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: $subtleblue;
-
+  .swiper {
+    width: auto;
+    height: auto;
+  }
+  img {
+    max-height: 500;
+    max-width: 310;
+    background-size: cover;
+  }
   h1 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 30px;
     color: white;
   }
+  i {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .btn-wisata {
+    background-color: $primary;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $semiblue;
+    }
+  }
+}
 
-  h2 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 24px;
+.section-intro-donasi {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  img {
+    max-height: 500;
+    max-width: 310;
+    background-size: cover;
+  }
+  i {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .btn-outline-primary {
+    &:hover {
+      background-color: $semiblue !important;
+    }
+  }
+}
+
+.section-donasi {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $subtleblue;
+  .swiper {
+    width: auto;
+    height: auto;
+  }
+  img {
+    max-height: 500;
+    max-width: 310;
+    background-size: cover;
+  }
+  h1 {
     color: white;
   }
-
-  h3 {
-    font-family: $font;
-    font-weight: 600;
-    font-size: 18px;
-    color: white;
+  i {
+    font-size: 6rem;
+    text-align: center;
   }
+  .btn-donasi {
+    background-color: $primary;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $semiblue;
+    }
+  }
+}
 
-  p {
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
+.section-register {
+  margin-top: 25px;
+  .btn-register {
+    background-color: $primary;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $semiblue;
+    }
+  }
+}
+
+.section-footer {
+  a {
+    text-decoration: none;
   }
 }

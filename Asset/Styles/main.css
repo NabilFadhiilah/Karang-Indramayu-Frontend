@@ -3,6 +3,31 @@ body {
   background-color: #f3f4f8;
 }
 
+body h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+body h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+body h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+body p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
+}
+
 .nav-custom {
   max-height: 100px !important;
 }
@@ -42,17 +67,6 @@ header p {
   color: #fff;
 }
 
-header h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-
-header p {
-  font-size: 18px;
-  font-weight: 400;
-}
-
 header .btn-get-started {
   background-color: #1c3095;
   color: #fff;
@@ -68,23 +82,6 @@ header .btn-get-started:hover {
   padding-bottom: 25px;
 }
 
-.section-informasi h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.section-informasi h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.section-informasi p {
-  font-size: 18px;
-  font-weight: 400;
-}
-
 .section-informasi img {
   max-height: 300px;
 }
@@ -95,31 +92,14 @@ header .btn-get-started:hover {
   background-color: #f6f9ff;
 }
 
-.section-berita-kegiatan h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.section-berita-kegiatan h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.section-berita-kegiatan h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.section-berita-kegiatan p {
-  font-size: 18px;
-  font-weight: 400;
+.section-berita-kegiatan .secondary-images {
+  max-width: 100px;
+  background-size: cover;
 }
 
 .section-berita-kegiatan img {
   max-height: 300px !important;
+  background-size: cover;
 }
 
 .section-berita-kegiatan a {
@@ -147,10 +127,6 @@ header .btn-get-started:hover {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .section-berita-kegiatan .secondary-image img {
-    height: 100;
-    width: 100;
-  }
 }
 
 .section-wisata {
@@ -159,30 +135,113 @@ header .btn-get-started:hover {
   background-color: #170b40;
 }
 
+.section-wisata .swiper {
+  width: auto;
+  height: auto;
+}
+
+.section-wisata img {
+  max-height: 500;
+  max-width: 310;
+  background-size: cover;
+}
+
 .section-wisata h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
   color: white;
 }
 
-.section-wisata h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
+.section-wisata i {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.section-wisata .btn-wisata {
+  background-color: #1c3095;
+}
+
+.section-wisata .btn-wisata a {
+  text-decoration: none;
+}
+
+.section-wisata .btn-wisata:hover {
+  background-color: #2a66e2;
+}
+
+.section-intro-donasi {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.section-intro-donasi img {
+  max-height: 500;
+  max-width: 310;
+  background-size: cover;
+}
+
+.section-intro-donasi i {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.section-intro-donasi .btn-outline-primary:hover {
+  background-color: #2a66e2 !important;
+}
+
+.section-donasi {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #170b40;
+}
+
+.section-donasi .swiper {
+  width: auto;
+  height: auto;
+}
+
+.section-donasi img {
+  max-height: 500;
+  max-width: 310;
+  background-size: cover;
+}
+
+.section-donasi h1 {
   color: white;
 }
 
-.section-wisata h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  color: white;
+.section-donasi i {
+  font-size: 6rem;
+  text-align: center;
 }
 
-.section-wisata p {
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
+.section-donasi .btn-donasi {
+  background-color: #1c3095;
+}
+
+.section-donasi .btn-donasi a {
+  text-decoration: none;
+}
+
+.section-donasi .btn-donasi:hover {
+  background-color: #2a66e2;
+}
+
+.section-register {
+  margin-top: 25px;
+}
+
+.section-register .btn-register {
+  background-color: #1c3095;
+}
+
+.section-register .btn-register a {
+  text-decoration: none;
+}
+
+.section-register .btn-register:hover {
+  background-color: #2a66e2;
+}
+
+.section-footer a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
