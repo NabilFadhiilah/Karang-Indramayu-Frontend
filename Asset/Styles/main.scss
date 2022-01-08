@@ -1,43 +1,12 @@
-$primary: #1c3095;
-$subtleblue: #170b40;
-$semiblue: #2a66e2;
-$background: #f3f4f8;
-$link: #599ec6;
-$text: #404040;
-
-$font: "Poppins", sans-serif;
-
-$semibold: 600;
-$reguler: 400;
-
-body {
-  font-family: $font;
-  background-color: $background;
-  h1 {
-    font-family: $font;
-    font-weight: $semibold;
-    font-size: 30px;
-  }
-  h2 {
-    font-family: $font;
-    font-weight: $semibold;
-    font-size: 24px;
-  }
-  h3 {
-    font-family: $font;
-    font-weight: $semibold;
-    font-size: 18px;
-  }
-  p {
-    font-family: $font;
-    font-size: 16px;
-    font-weight: $reguler;
-    color: $text;
-  }
-}
+@import "./color";
+@import "./font";
 
 .nav-custom {
+  padding: 30px 0;
   max-height: 100px !important;
+  .container-fluid {
+    background-color: white;
+  }
   .navbar-brand {
     img {
       max-height: 40px;
@@ -57,8 +26,25 @@ body {
   .nav-item {
     margin-right: 15px !important;
   }
+  .avatar {
+    img {
+      max-height: 45px;
+      width: auto;
+      vertical-align: middle;
+      border-radius: 200px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .avatar {
+      img {
+        visibility: hidden;
+        display: none;
+      }
+    }
+  }
 }
 
+// Landing Page
 header {
   padding: 180px 0 165px;
   background-image: url("../Images/Banner-Hero.png");
@@ -80,8 +66,12 @@ header {
 .section-informasi {
   padding-top: 55px;
   padding-bottom: 25px;
-  img {
-    max-height: 300px;
+  .info-image {
+    img {
+      width: 450px;
+      height: 250px;
+      object-fit: cover;
+    }
   }
 }
 
@@ -89,19 +79,25 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #f6f9ff;
-  .secondary-images {
-    max-width: 100px;
-    background-size: cover;
+  .main-berita {
+    img {
+      width: 355px;
+      height: 250px;
+      object-fit: cover;
+    }
   }
-  img {
-    max-height: 300px !important;
-    background-size: cover;
+  .secondary-berita {
+    img {
+      width: 250px;
+      height: 130px;
+      object-fit: cover;
+    }
   }
   a {
     color: $link;
   }
   i {
-    font-size: 6rem;
+    font-size: 5rem;
     text-align: center;
   }
   .btn-berita {
@@ -112,7 +108,17 @@ header {
       background-color: $semiblue;
     }
   }
-  @media screen {
+  @media screen and (max-width: 600px) {
+    .secondary-berita {
+      margin-top: 25px;
+      img {
+        // padding-right: 20px;
+        padding-left: 20px;
+        width: 355px;
+        height: 175px;
+        object-fit: cover;
+      }
+    }
     i {
       font-size: 4rem;
       padding-right: 20px;
@@ -129,10 +135,12 @@ header {
     width: auto;
     height: auto;
   }
-  img {
-    max-height: 500;
-    max-width: 310;
-    background-size: cover;
+  .wisata-image {
+    img {
+      height: 191px;
+      width: 270px;
+      object-fit: cover;
+    }
   }
   h1 {
     color: white;
@@ -150,6 +158,16 @@ header {
       background-color: $semiblue;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .wisata-image {
+      img {
+        height: 277px;
+        width: 390px;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 .section-intro-donasi {
@@ -158,11 +176,7 @@ header {
   img {
     max-height: 500;
     max-width: 310;
-    background-size: cover;
-  }
-  i {
-    font-size: 6rem;
-    text-align: center;
+    object-fit: cover;
   }
   .btn-outline-primary {
     &:hover {
@@ -179,10 +193,12 @@ header {
     width: auto;
     height: auto;
   }
-  img {
-    max-height: 500;
-    max-width: 310;
-    background-size: cover;
+  .image-terumbu {
+    img {
+      height: 191px;
+      width: 270px;
+      object-fit: cover;
+    }
   }
   h1 {
     color: white;
@@ -198,6 +214,16 @@ header {
     }
     &:hover {
       background-color: $semiblue;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .image-terumbu {
+      img {
+        height: 277px;
+        width: 390px;
+        object-fit: cover;
+      }
     }
   }
 }
@@ -218,5 +244,60 @@ header {
 .section-footer {
   a {
     text-decoration: none;
+    color: $text;
   }
 }
+
+// Eksplor Wisata
+.banner-wisata {
+  padding: 110px 0 165px;
+  background-image: url("../Images/Banner-Eksplor-Wisata.png");
+  background-size: cover;
+}
+.eksplor-wisata {
+  .btn-primary {
+    background: $primary;
+    border: none;
+    &:hover {
+      background: $semiblue;
+    }
+  }
+  .btn-outline-primary {
+    border-color: $semiblue;
+    color: $semiblue;
+    &:hover {
+      background: $semiblue;
+    }
+  }
+  img {
+    object-fit: cover;
+  }
+}
+
+// Eksplor Donasi
+.banner-terumbu {
+  padding: 110px 0 165px;
+  background-image: url("../Images/Banner-Eksplor-Terumbu.png");
+  background-size: cover;
+}
+.eksplor-terumbu {
+  .btn-primary {
+    background: $primary;
+    border: none;
+    &:hover {
+      background: $semiblue;
+    }
+  }
+  .btn-outline-primary {
+    border-color: $semiblue;
+    color: $semiblue;
+    &:hover {
+      background: $semiblue;
+    }
+  }
+}
+
+@import "./detail-wisata";
+@import "./detail-terumbu";
+
+// Checkout Wisata

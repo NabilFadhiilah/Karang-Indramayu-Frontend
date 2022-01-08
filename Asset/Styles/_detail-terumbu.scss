@@ -1,0 +1,77 @@
+// Detail terumbu
+.section-detail-terumbu {
+  background-color: $subtleblue;
+  padding: 30px 0;
+  .breadcrumb {
+    color: white;
+    h4 {
+      color: white;
+      font-weight: 400;
+    }
+    @media screen and (max-width: 600px) {
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+  .breadcrumb-item {
+    &.active {
+      font-weight: $semibold;
+      color: white;
+    }
+  }
+}
+.side-card {
+  .informasi-paket {
+    th {
+      font-family: $font;
+      font-weight: 300;
+      font-size: 14px;
+      color: #071c4d;
+    }
+
+    td {
+      font-family: $font;
+      font-weight: 300;
+      font-size: 14px;
+      color: #b1b1b1;
+    }
+  }
+}
+.section-detail-card {
+  margin-top: -25px;
+  .swiper {
+    width: 1200px;
+    height: auto;
+  }
+  .swiper-slide {
+    img {
+      width: 300px;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
+  .btn-join-now {
+    background-color: $primary;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    &:hover {
+      color: #fff;
+      background-color: $semiblue;
+    }
+  }
+  .btn-wisata-lainnya {
+    background-color: $orange;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    &:hover {
+      color: #fff;
+      background-color: #fbab3d;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .main-card {
+      margin-bottom: 20px;
+    }
+  }
+}

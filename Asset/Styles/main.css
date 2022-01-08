@@ -21,6 +21,12 @@ body h3 {
   font-size: 18px;
 }
 
+body h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 body p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -28,8 +34,18 @@ body p {
   color: #404040;
 }
 
+body .paragraph-2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
 .nav-custom {
+  padding: 30px 0;
   max-height: 100px !important;
+}
+
+.nav-custom .container-fluid {
+  background-color: white;
 }
 
 .nav-custom .navbar-brand img {
@@ -54,6 +70,20 @@ body p {
 
 .nav-custom .nav-item {
   margin-right: 15px !important;
+}
+
+.nav-custom .avatar img {
+  max-height: 45px;
+  width: auto;
+  vertical-align: middle;
+  border-radius: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-custom .avatar img {
+    visibility: hidden;
+    display: none;
+  }
 }
 
 header {
@@ -82,8 +112,11 @@ header .btn-get-started:hover {
   padding-bottom: 25px;
 }
 
-.section-informasi img {
-  max-height: 300px;
+.section-informasi .info-image img {
+  width: 450px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-berita-kegiatan {
@@ -92,14 +125,18 @@ header .btn-get-started:hover {
   background-color: #f6f9ff;
 }
 
-.section-berita-kegiatan .secondary-images {
-  max-width: 100px;
-  background-size: cover;
+.section-berita-kegiatan .main-berita img {
+  width: 355px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.section-berita-kegiatan img {
-  max-height: 300px !important;
-  background-size: cover;
+.section-berita-kegiatan .secondary-berita img {
+  width: 250px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-berita-kegiatan a {
@@ -107,7 +144,7 @@ header .btn-get-started:hover {
 }
 
 .section-berita-kegiatan i {
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -121,7 +158,17 @@ header .btn-get-started:hover {
   background-color: #2a66e2;
 }
 
-@media screen {
+@media screen and (max-width: 600px) {
+  .section-berita-kegiatan .secondary-berita {
+    margin-top: 25px;
+  }
+  .section-berita-kegiatan .secondary-berita img {
+    padding-left: 20px;
+    width: 355px;
+    height: 175px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .section-berita-kegiatan i {
     font-size: 4rem;
     padding-right: 20px;
@@ -140,10 +187,11 @@ header .btn-get-started:hover {
   height: auto;
 }
 
-.section-wisata img {
-  max-height: 500;
-  max-width: 310;
-  background-size: cover;
+.section-wisata .wisata-image img {
+  height: 191px;
+  width: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-wisata h1 {
@@ -167,6 +215,15 @@ header .btn-get-started:hover {
   background-color: #2a66e2;
 }
 
+@media screen and (max-width: 600px) {
+  .section-wisata .wisata-image img {
+    height: 277px;
+    width: 390px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .section-intro-donasi {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -175,12 +232,8 @@ header .btn-get-started:hover {
 .section-intro-donasi img {
   max-height: 500;
   max-width: 310;
-  background-size: cover;
-}
-
-.section-intro-donasi i {
-  font-size: 6rem;
-  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-intro-donasi .btn-outline-primary:hover {
@@ -198,10 +251,11 @@ header .btn-get-started:hover {
   height: auto;
 }
 
-.section-donasi img {
-  max-height: 500;
-  max-width: 310;
-  background-size: cover;
+.section-donasi .image-terumbu img {
+  height: 191px;
+  width: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-donasi h1 {
@@ -225,6 +279,15 @@ header .btn-get-started:hover {
   background-color: #2a66e2;
 }
 
+@media screen and (max-width: 600px) {
+  .section-donasi .image-terumbu img {
+    height: 277px;
+    width: 390px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .section-register {
   margin-top: 25px;
 }
@@ -243,5 +306,225 @@ header .btn-get-started:hover {
 
 .section-footer a {
   text-decoration: none;
+  color: #404040;
+}
+
+.banner-wisata {
+  padding: 110px 0 165px;
+  background-image: url("../Images/Banner-Eksplor-Wisata.png");
+  background-size: cover;
+}
+
+.eksplor-wisata .btn-primary {
+  background: #1c3095;
+  border: none;
+}
+
+.eksplor-wisata .btn-primary:hover {
+  background: #2a66e2;
+}
+
+.eksplor-wisata .btn-outline-primary {
+  border-color: #2a66e2;
+  color: #2a66e2;
+}
+
+.eksplor-wisata .btn-outline-primary:hover {
+  background: #2a66e2;
+}
+
+.eksplor-wisata img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-terumbu {
+  padding: 110px 0 165px;
+  background-image: url("../Images/Banner-Eksplor-Terumbu.png");
+  background-size: cover;
+}
+
+.eksplor-terumbu .btn-primary {
+  background: #1c3095;
+  border: none;
+}
+
+.eksplor-terumbu .btn-primary:hover {
+  background: #2a66e2;
+}
+
+.eksplor-terumbu .btn-outline-primary {
+  border-color: #2a66e2;
+  color: #2a66e2;
+}
+
+.eksplor-terumbu .btn-outline-primary:hover {
+  background: #2a66e2;
+}
+
+.section-detail-wisata {
+  background-color: #170b40;
+  padding: 30px 0;
+}
+
+.section-detail-wisata .breadcrumb {
+  color: white;
+}
+
+.section-detail-wisata .breadcrumb h4 {
+  color: white;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .section-detail-wisata .breadcrumb h4 {
+    font-size: 12px;
+  }
+}
+
+.section-detail-wisata .breadcrumb-item.active {
+  font-weight: 600;
+  color: white;
+}
+
+.side-card .informasi-paket th {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #071c4d;
+}
+
+.side-card .informasi-paket td {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.section-detail-card {
+  margin-top: -25px;
+}
+
+.section-detail-card .swiper {
+  width: 1200px;
+  height: auto;
+}
+
+.section-detail-card .swiper-slide img {
+  width: 300px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-detail-card .btn-join-now {
+  background-color: #1c3095;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.section-detail-card .btn-join-now:hover {
+  color: #fff;
+  background-color: #2a66e2;
+}
+
+.section-detail-card .btn-wisata-lainnya {
+  background-color: #ff9e53;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.section-detail-card .btn-wisata-lainnya:hover {
+  color: #fff;
+  background-color: #fbab3d;
+}
+
+@media screen and (max-width: 600px) {
+  .section-detail-card .main-card {
+    margin-bottom: 20px;
+  }
+}
+
+.section-detail-terumbu {
+  background-color: #170b40;
+  padding: 30px 0;
+}
+
+.section-detail-terumbu .breadcrumb {
+  color: white;
+}
+
+.section-detail-terumbu .breadcrumb h4 {
+  color: white;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .section-detail-terumbu .breadcrumb h4 {
+    font-size: 12px;
+  }
+}
+
+.section-detail-terumbu .breadcrumb-item.active {
+  font-weight: 600;
+  color: white;
+}
+
+.side-card .informasi-paket th {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #071c4d;
+}
+
+.side-card .informasi-paket td {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.section-detail-card {
+  margin-top: -25px;
+}
+
+.section-detail-card .swiper {
+  width: 1200px;
+  height: auto;
+}
+
+.section-detail-card .swiper-slide img {
+  width: 300px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-detail-card .btn-join-now {
+  background-color: #1c3095;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.section-detail-card .btn-join-now:hover {
+  color: #fff;
+  background-color: #2a66e2;
+}
+
+.section-detail-card .btn-wisata-lainnya {
+  background-color: #ff9e53;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.section-detail-card .btn-wisata-lainnya:hover {
+  color: #fff;
+  background-color: #fbab3d;
+}
+
+@media screen and (max-width: 600px) {
+  .section-detail-card .main-card {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

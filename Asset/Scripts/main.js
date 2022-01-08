@@ -1,5 +1,6 @@
 var swiper = new Swiper(".swiper", {
   direction: "horizontal",
+  centeredSlides: false,
   spaceBetween: 20,
   freeMode: true,
   breakpoints: {
@@ -8,8 +9,4 @@ var swiper = new Swiper(".swiper", {
       slidesPerGroup: 2,
     },
   },
-  // scrollbars: {
-  //   el: ".swiper-scrollbars",
-  //   clickable: true,
-  // },
 });
