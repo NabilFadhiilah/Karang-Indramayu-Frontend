@@ -301,3 +301,19 @@ header {
 @import "./detail-terumbu";
 
 // Checkout Wisata
+.success-wisata {
+  img {
+    object-fit: cover;
+    width: 350px;
+  }
+  .btn-primary {
+    background: $primary;
+    border: none;
+    &:hover {
+      background: $semiblue;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}

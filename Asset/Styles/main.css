@@ -527,4 +527,23 @@ header .btn-get-started:hover {
     margin-bottom: 20px;
   }
 }
+
+.success-wisata img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350px;
+}
+
+.success-wisata .btn-primary {
+  background: #1c3095;
+  border: none;
+}
+
+.success-wisata .btn-primary:hover {
+  background: #2a66e2;
+}
+
+.success-wisata a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */
