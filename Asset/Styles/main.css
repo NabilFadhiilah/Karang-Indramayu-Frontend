@@ -39,6 +39,28 @@ body .paragraph-2 {
   font-size: 14px;
 }
 
+body a {
+  color: #599ec6;
+}
+
+body .btn-primary {
+  background: #1c3095;
+  border: none;
+}
+
+body .btn-primary:hover {
+  background: #2a66e2;
+}
+
+body .btn-outline-primary {
+  border-color: #2a66e2;
+  color: #2a66e2;
+}
+
+body .btn-outline-primary:hover {
+  background: #2a66e2;
+}
+
 .nav-custom {
   padding: 30px 0;
   max-height: 100px !important;
@@ -139,10 +161,6 @@ header .btn-get-started:hover {
      object-fit: cover;
 }
 
-.section-berita-kegiatan a {
-  color: #599ec6;
-}
-
 .section-berita-kegiatan i {
   font-size: 5rem;
   text-align: center;
@@ -188,8 +206,8 @@ header .btn-get-started:hover {
 }
 
 .section-wisata .wisata-image img {
-  height: 191px;
-  width: 270px;
+  height: 200px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -217,8 +235,8 @@ header .btn-get-started:hover {
 
 @media screen and (max-width: 600px) {
   .section-wisata .wisata-image img {
-    height: 277px;
-    width: 390px;
+    height: 200px;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -236,10 +254,6 @@ header .btn-get-started:hover {
      object-fit: cover;
 }
 
-.section-intro-donasi .btn-outline-primary:hover {
-  background-color: #2a66e2 !important;
-}
-
 .section-donasi {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -252,8 +266,8 @@ header .btn-get-started:hover {
 }
 
 .section-donasi .image-terumbu img {
-  height: 191px;
-  width: 270px;
+  height: 200px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -306,31 +320,12 @@ header .btn-get-started:hover {
 
 .section-footer a {
   text-decoration: none;
-  color: #404040;
 }
 
 .banner-wisata {
   padding: 110px 0 165px;
   background-image: url("../Images/Banner-Eksplor-Wisata.png");
   background-size: cover;
-}
-
-.eksplor-wisata .btn-primary {
-  background: #1c3095;
-  border: none;
-}
-
-.eksplor-wisata .btn-primary:hover {
-  background: #2a66e2;
-}
-
-.eksplor-wisata .btn-outline-primary {
-  border-color: #2a66e2;
-  color: #2a66e2;
-}
-
-.eksplor-wisata .btn-outline-primary:hover {
-  background: #2a66e2;
 }
 
 .eksplor-wisata img {
@@ -344,45 +339,34 @@ header .btn-get-started:hover {
   background-size: cover;
 }
 
-.eksplor-terumbu .btn-primary {
-  background: #1c3095;
-  border: none;
+.eksplor-terumbu .card-donasi img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.eksplor-terumbu .btn-primary:hover {
-  background: #2a66e2;
-}
-
-.eksplor-terumbu .btn-outline-primary {
-  border-color: #2a66e2;
-  color: #2a66e2;
-}
-
-.eksplor-terumbu .btn-outline-primary:hover {
-  background: #2a66e2;
-}
-
-.section-detail-wisata {
+.section-detail {
   background-color: #170b40;
   padding: 30px 0;
 }
 
-.section-detail-wisata .breadcrumb {
+.section-detail .breadcrumb {
   color: white;
 }
 
-.section-detail-wisata .breadcrumb h4 {
+.section-detail .breadcrumb h4 {
   color: white;
   font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
-  .section-detail-wisata .breadcrumb h4 {
+  .section-detail .breadcrumb h4 {
     font-size: 12px;
   }
 }
 
-.section-detail-wisata .breadcrumb-item.active {
+.section-detail .breadcrumb-item.active {
   font-weight: 600;
   color: white;
 }
@@ -405,13 +389,20 @@ header .btn-get-started:hover {
   margin-top: -25px;
 }
 
+.section-detail-card .main-card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section-detail-card .swiper {
-  width: 1200px;
+  width: 100%;
   height: auto;
 }
 
 .section-detail-card .swiper-slide img {
-  width: 300px;
+  width: 100%;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -439,111 +430,22 @@ header .btn-get-started:hover {
   background-color: #fbab3d;
 }
 
-@media screen and (max-width: 600px) {
-  .section-detail-card .main-card {
-    margin-bottom: 20px;
-  }
-}
-
-.section-detail-terumbu {
-  background-color: #170b40;
-  padding: 30px 0;
-}
-
-.section-detail-terumbu .breadcrumb {
-  color: white;
-}
-
-.section-detail-terumbu .breadcrumb h4 {
-  color: white;
-  font-weight: 400;
-}
-
-@media screen and (max-width: 600px) {
-  .section-detail-terumbu .breadcrumb h4 {
-    font-size: 12px;
-  }
-}
-
-.section-detail-terumbu .breadcrumb-item.active {
-  font-weight: 600;
-  color: white;
-}
-
-.side-card .informasi-paket th {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #071c4d;
-}
-
-.side-card .informasi-paket td {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #b1b1b1;
-}
-
-.section-detail-card {
-  margin-top: -25px;
-}
-
-.section-detail-card .swiper {
-  width: 1200px;
-  height: auto;
-}
-
-.section-detail-card .swiper-slide img {
-  width: 300px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.section-detail-card .btn-join-now {
-  background-color: #1c3095;
-  color: white;
-  border-radius: 0 0 5px 5px;
-}
-
-.section-detail-card .btn-join-now:hover {
-  color: #fff;
-  background-color: #2a66e2;
-}
-
-.section-detail-card .btn-wisata-lainnya {
-  background-color: #ff9e53;
-  color: white;
-  border-radius: 0 0 5px 5px;
-}
-
-.section-detail-card .btn-wisata-lainnya:hover {
-  color: #fff;
-  background-color: #fbab3d;
-}
-
-@media screen and (max-width: 600px) {
-  .section-detail-card .main-card {
-    margin-bottom: 20px;
-  }
-}
-
-.success-wisata img {
+.success-payment img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 350px;
 }
 
-.success-wisata .btn-primary {
+.success-payment .btn-primary {
   background: #1c3095;
   border: none;
 }
 
-.success-wisata .btn-primary:hover {
+.success-payment .btn-primary:hover {
   background: #2a66e2;
 }
 
-.success-wisata a {
+.success-payment a {
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

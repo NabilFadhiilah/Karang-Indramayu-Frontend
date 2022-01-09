@@ -1,5 +1,67 @@
-@import "./color";
-@import "./font";
+$primary: #1c3095;
+$subtleblue: #170b40;
+$semiblue: #2a66e2;
+$background: #f3f4f8;
+$orange: #ff9e53;
+$link: #599ec6;
+$text: #404040;
+
+$font: "Poppins", sans-serif;
+
+$semibold: 600;
+$reguler: 400;
+
+body {
+  font-family: $font;
+  background-color: $background;
+  h1 {
+    font-family: $font;
+    font-weight: $semibold;
+    font-size: 30px;
+  }
+  h2 {
+    font-family: $font;
+    font-weight: $semibold;
+    font-size: 24px;
+  }
+  h3 {
+    font-family: $font;
+    font-weight: $semibold;
+    font-size: 18px;
+  }
+  h4 {
+    font-family: $font;
+    font-weight: $semibold;
+    font-size: 16px;
+  }
+  p {
+    font-family: $font;
+    font-size: 16px;
+    font-weight: $reguler;
+    color: $text;
+  }
+  .paragraph-2 {
+    font-family: $font;
+    font-size: 14px;
+  }
+  a {
+    color: $link;
+  }
+  .btn-primary {
+    background: $primary;
+    border: none;
+    &:hover {
+      background: $semiblue;
+    }
+  }
+  .btn-outline-primary {
+    border-color: $semiblue;
+    color: $semiblue;
+    &:hover {
+      background: $semiblue;
+    }
+  }
+}
 
 .nav-custom {
   padding: 30px 0;
@@ -93,9 +155,6 @@ header {
       object-fit: cover;
     }
   }
-  a {
-    color: $link;
-  }
   i {
     font-size: 5rem;
     text-align: center;
@@ -137,8 +196,8 @@ header {
   }
   .wisata-image {
     img {
-      height: 191px;
-      width: 270px;
+      height: 200px;
+      width: 100%;
       object-fit: cover;
     }
   }
@@ -162,8 +221,8 @@ header {
   @media screen and (max-width: 600px) {
     .wisata-image {
       img {
-        height: 277px;
-        width: 390px;
+        height: 200px;
+        width: 100%;
         object-fit: cover;
       }
     }
@@ -178,11 +237,6 @@ header {
     max-width: 310;
     object-fit: cover;
   }
-  .btn-outline-primary {
-    &:hover {
-      background-color: $semiblue !important;
-    }
-  }
 }
 
 .section-donasi {
@@ -195,8 +249,8 @@ header {
   }
   .image-terumbu {
     img {
-      height: 191px;
-      width: 270px;
+      height: 200px;
+      width: 100%;
       object-fit: cover;
     }
   }
@@ -244,7 +298,6 @@ header {
 .section-footer {
   a {
     text-decoration: none;
-    color: $text;
   }
 }
 
@@ -255,20 +308,6 @@ header {
   background-size: cover;
 }
 .eksplor-wisata {
-  .btn-primary {
-    background: $primary;
-    border: none;
-    &:hover {
-      background: $semiblue;
-    }
-  }
-  .btn-outline-primary {
-    border-color: $semiblue;
-    color: $semiblue;
-    &:hover {
-      background: $semiblue;
-    }
-  }
   img {
     object-fit: cover;
   }
@@ -281,27 +320,96 @@ header {
   background-size: cover;
 }
 .eksplor-terumbu {
-  .btn-primary {
-    background: $primary;
-    border: none;
-    &:hover {
-      background: $semiblue;
-    }
-  }
-  .btn-outline-primary {
-    border-color: $semiblue;
-    color: $semiblue;
-    &:hover {
-      background: $semiblue;
+  .card-donasi {
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
   }
 }
 
-@import "./detail-wisata";
-@import "./detail-terumbu";
+// Detail Object
+.section-detail {
+  background-color: $subtleblue;
+  padding: 30px 0;
+  .breadcrumb {
+    color: white;
+    h4 {
+      color: white;
+      font-weight: 400;
+    }
+    @media screen and (max-width: 600px) {
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+  .breadcrumb-item {
+    &.active {
+      font-weight: $semibold;
+      color: white;
+    }
+  }
+}
+.side-card {
+  .informasi-paket {
+    th {
+      font-family: $font;
+      font-weight: 300;
+      font-size: 14px;
+      color: #071c4d;
+    }
+    td {
+      font-family: $font;
+      font-weight: 300;
+      font-size: 14px;
+      color: #b1b1b1;
+    }
+  }
+}
+.section-detail-card {
+  margin-top: -25px;
+  .main-card {
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-slide {
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
+  .btn-join-now {
+    background-color: $primary;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    &:hover {
+      color: #fff;
+      background-color: $semiblue;
+    }
+  }
+  .btn-wisata-lainnya {
+    background-color: $orange;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    &:hover {
+      color: #fff;
+      background-color: #fbab3d;
+    }
+  }
+}
 
-// Checkout Wisata
-.success-wisata {
+// Success Payment
+.success-payment {
   img {
     object-fit: cover;
     width: 350px;
