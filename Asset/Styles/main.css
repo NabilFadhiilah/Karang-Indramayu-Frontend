@@ -39,6 +39,11 @@ body .paragraph-2 {
   font-size: 14px;
 }
 
+body .paragraph-3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
 body a {
   color: #599ec6;
 }
@@ -371,6 +376,23 @@ header .btn-get-started:hover {
   color: white;
 }
 
+.gallery .xzoom-container {
+  display: block;
+}
+
+.gallery .xzoom-container .xzoom {
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.gallery .xzoom-container .xactive {
+  border: 2px solid #1abc9c;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .side-card .informasi-paket th {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -385,11 +407,26 @@ header .btn-get-started:hover {
   color: #b1b1b1;
 }
 
+.side-card a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.avatar-circle img {
+  width: 125px;
+  border-radius: 100%;
+}
+
 .section-detail-card {
   margin-top: -25px;
 }
 
 .section-detail-card .main-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-detail-card .checkout-image img {
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
@@ -447,5 +484,13 @@ header .btn-get-started:hover {
 
 .success-payment a {
   text-decoration: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.icon-dashboard i {
+  font-size: 2.5em;
 }
 /*# sourceMappingURL=main.css.map */
