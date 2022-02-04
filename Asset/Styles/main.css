@@ -66,6 +66,24 @@ body .btn-outline-primary:hover {
   background: #2a66e2;
 }
 
+body .overflow-ellipsis {
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body .overflow-ellipsis:hover {
+  overflow: visible;
+  white-space: normal;
+}
+
+body input[type="number"]::-webkit-inner-spin-button,
+body input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: auto;
+}
+
 .nav-custom {
   padding: 30px 0;
   max-height: 100px !important;
